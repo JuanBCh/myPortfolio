@@ -4,8 +4,8 @@ function Header() {
   let nav = [
     { title: "Home", href: "main" },
     { title: "About Me", href: "aboutme" },
-    { title: "Portfolio", href: "portfolio" },
     { title: "Skills", href: "skills" },
+    { title: "Portfolio", href: "portfolio" },
     { title: "Contact", href: "contact" },
   ];
   return (
