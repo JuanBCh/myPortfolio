@@ -1,20 +1,19 @@
-import AboutMe from "./components/aboutMe/AboutMe";
-import Contact from "./components/contact/contact";
-import Header from "./components/header/header";
-import Main from "./components/main/Main";
-import Portfolio from "./components/portfolio/portfolio";
-import Skills from "./components/skils/skills";
-import styles from "./page.module.css";
+import Services from "@/components/Services/services";
+import Header from "../components/Header/header";
+import Intro from "../components/Intro/intro";
+import AboutMe from "@/components/AboutMe/aboutMe";
+import Work from "@/components/Work/work";
+import Footer from "@/components/Footer/footer";
 
 function Home() {
   return (
-    <div className={styles.home}>
+    <div>
       <Header />
-      <Main />
+      <Intro />
+      <Services />
       <AboutMe />
-      <Skills />
-      <Portfolio />
-      <Contact />
+      <Work />
+      <Footer />
     </div>
   );
 }

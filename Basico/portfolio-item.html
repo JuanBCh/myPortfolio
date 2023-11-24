@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Bagnasco Port</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Se pone en un div pero es opcional -->
+      <div class="logo">
+        <!-- <img src="img/logo.png" alt="logo" /> -->
+        <span>< JuanBCh ></span>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <!-- Porque doble barra baja? segun el sistema BEN, esto significa que esta lista es un subcomponente de nav. ayuda al momento de leer el archivo css -->
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#aboutme" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Title <strong>of my project</strong>
+      </h1>
+      <p class="sectioni__subtitle section__subtitle--intro">short subtitle</p>
+      <img
+        src="img/juanBag.JPG"
+        alt="a picture of Juan Bagnasco"
+        class="intro__img"
+      />
+    </section>
+
+    <div class="portfolio-item-individual"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:jachiappara@gmail.com" class="footer__link"
+        >jachiappara@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/juanbagnasco/"
+            ><i class="fa-brands fa-linkedin-in" style="color: #16e0bd"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/JuanBCh"
+            ><i class="fa-brands fa-github" style="color: #16e0bd"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/c598905fd8.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/index.js"></script>
+</html>

@@ -1,0 +1,72 @@
+.myServices {
+  background-color: var(--clr-ld);
+  background-image: url(../../public/img/services-bg.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__titleServices {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.section__titleServices::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: currentColor;
+  opacity: 0.35;
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.service + .service {
+  margin-top: 3em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 900px) {
+  .services {
+    display: flex;
+    max-width: var(--fs-mw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* el + dice que vea a los hermanos, no afecta el de la izquieda del todo */
+  .service + .service {
+    margin-left: 2em;
+    margin-top: 0;
+  }
+
+  .service {
+    width: 33%;
+  }
+}
