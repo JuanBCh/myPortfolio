@@ -10,6 +10,8 @@
 
 .nav {
   position: fixed;
+  width: 100vw;
+  height: 100vh;
   background: var(--clr-dark);
   color: var(--clr-light);
   top: 0;
@@ -59,11 +61,11 @@
   transform: translateX(0%);
 }
 
-.navOpen .nav-toggle {
+.navOpen .navToggle {
   position: fixed;
 }
 
-.navOpen .nav-toggle:focus {
+.navOpen .navToggle:focus {
   outline: none;
 }
 

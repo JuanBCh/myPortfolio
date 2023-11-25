@@ -2,7 +2,7 @@
   background: #111;
   color: var(--clr-accent);
   text-align: center;
-  padding: 2.5em 0;
+  padding: 2em 0 0.5em;
   font-size: var(--fs-h3);
 }
 
@@ -37,5 +37,7 @@
 }
 
 .socialList__link {
+  display: inline-block;
+  width: 60px;
   padding: 0.5em;
 }
