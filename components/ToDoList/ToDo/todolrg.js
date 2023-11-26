@@ -36,8 +36,12 @@ export function EditToDo({ newOne }) {
   };
 
   return (
-    <div
+    <form
       className={`${style.editableToDo} ${newOne ? style.newOne : undefined}`}
+      onSubmit={(e) => {
+        e.preventDefault();
+        localStorage.setItem("todos", JSON.stringify(data));
+      }}
     >
       <div>
         <input
@@ -62,8 +66,8 @@ export function EditToDo({ newOne }) {
         onChange={(e) => manageToDo(e)}
       />
       <div>
-        <button>Done</button>
+        <button type="submit">Done</button>
       </div>
-    </div>
+    </form>
   );
 }

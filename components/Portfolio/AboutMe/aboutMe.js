@@ -16,7 +16,7 @@ export default function AboutMe() {
           I am Juan Bagnasco, a Fullstack developer from Uruguay with experience
           in e-commerce projects and other web applications. My training
           includes a 420-hour FullStack Developer bootcamp at Senpai Academy,
-          and currently I am studying Computer Engineering grade.
+          and I'm currently studying Computer Engineering grade.
         </p>
         <p>
           I'm passionate about the world of software development as it provides
