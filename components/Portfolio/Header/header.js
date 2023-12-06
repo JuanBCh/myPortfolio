@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./Header.module.css";
+import styles from "./header.module.css";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
