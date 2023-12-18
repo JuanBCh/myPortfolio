@@ -1,0 +1,45 @@
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-ld: #6d6d6d;
+  --clr-accent: #16e0bd;
+
+  --fs-h1: 2.5rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.3rem;
+  --fs-body: 1.2rem;
+
+  --fs-mw: 85vw;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 400px) {
+  :root {
+    --fs-h1: 3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+
+    --fs-mw: 85vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --fs-mw: 75vw;
+  }
+}

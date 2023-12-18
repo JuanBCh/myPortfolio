@@ -1,0 +1,9 @@
+[
+  {
+    "title": ["My first project", ""],
+    "subtitle": "Copy a web page",
+    "imgs": ["img/projects/nexos1.jpg", "img/projects/nexos2.jpg"],
+    "pars": ["NaN", "", ""],
+    "link": "https://first-senpai-project.vercel.app/"
+  }
+]

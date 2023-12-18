@@ -6,6 +6,7 @@
 .aboutMe__img {
   box-shadow: var(--bs);
   z-index: 2;
+  height: fit-content;
 }
 
 @media (min-width: 800px) {

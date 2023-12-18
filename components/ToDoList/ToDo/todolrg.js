@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import style from "./todo.module.css";
+import { SaveOnLS } from "@/components/Utilities/utilities";
 
 export function ToDoLrg({ onClick }) {
   return (
     <div
-      className={style.toDoLrg}
+      className={`${style.todo} ${style.toDoLrg}`}
       onClick={onClick ? () => onClick() : undefined}
     >
       <div>
@@ -32,7 +33,6 @@ export function EditToDo({ newOne }) {
 
   const manageToDo = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
-    console.log(data);
   };
 
   return (
@@ -40,7 +40,7 @@ export function EditToDo({ newOne }) {
       className={`${style.editableToDo} ${newOne ? style.newOne : undefined}`}
       onSubmit={(e) => {
         e.preventDefault();
-        localStorage.setItem("todos", JSON.stringify(data));
+        SaveOnLS("todos", data);
       }}
     >
       <div>

@@ -1,4 +1,5 @@
 import styles from "./intro.module.css";
+import Image from "next/image";
 
 function Intro() {
   return (
@@ -11,9 +12,11 @@ function Intro() {
       >
         FullStack Web Developer
       </p>
-      <img
-        src="img/juanBag.JPG"
-        alt="a picture of Juan Bagnasco"
+      <Image
+        src="/img/juanBag.JPG"
+        alt="A picture of Juan Bagnasco"
+        width={790}
+        height={907}
         className={styles.intro__img}
       />
     </section>

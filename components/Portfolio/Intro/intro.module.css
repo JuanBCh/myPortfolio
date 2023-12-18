@@ -4,6 +4,7 @@
 
 .intro__img {
   box-shadow: var(--bs);
+  height: fit-content;
 }
 
 .section__subtitleIntro {

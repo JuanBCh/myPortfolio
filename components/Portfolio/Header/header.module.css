@@ -8,6 +8,10 @@
   max-width: 100px;
 }
 
+.logo img {
+  height: fit-content;
+}
+
 .nav {
   position: fixed;
   width: 100vw;

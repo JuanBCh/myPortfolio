@@ -1,4 +1,8 @@
+"use client";
+
 import styles from "./work.module.css";
+import projects from "../../../app/projects.json";
+import Link from "next/link";
 
 export default function Work() {
   return (
@@ -12,15 +16,21 @@ export default function Work() {
         A selection of my range of work
       </p>
       <div className={styles.portfolio}>
-        <a href="#" className={styles.portfolio__item}>
-          <img src="#" alt="" className={styles.portfolio__img} />
-        </a>
-        <a href="#" className={styles.portfolio__item}>
-          <img src="#" alt="" className={styles.portfolio__img} />
-        </a>
-        <a href="#" className={styles.portfolio__item}>
-          <img src="#" alt="" className={styles.portfolio__img} />
-        </a>
+        {projects.map((p, k) => {
+          return (
+            <Link
+              href={`/projects/${k}`}
+              key={k}
+              className={styles.portfolio__item}
+            >
+              <img
+                src={p.imgs[0]}
+                alt={`${p.title[0]} ${p.title[1] ? p.title[1] : undefined}`}
+                className={styles.portfolio__img}
+              />
+            </Link>
+          );
+        })}
       </div>
     </section>
   );

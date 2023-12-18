@@ -1,9 +1,15 @@
 import styles from "./footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 export default function Footer() {
+  const myDoc = {};
+
   return (
     <footer className={styles.footer}>
       <a href="mailto:jachiappara@gmail.com" className={styles.footer__link}>
@@ -26,6 +32,13 @@ export default function Footer() {
             className={styles.socialList__link}
           >
             <FontAwesomeIcon icon={faGithub} style={{ color: "#16e0bd" }} />
+          </Link>
+          <Link
+            href="https://wa.me/+59899933342"
+            target="_blank"
+            className={styles.socialList__link}
+          >
+            <FontAwesomeIcon icon={faWhatsapp} style={{ color: "#16e0bd" }} />
           </Link>
         </li>
       </ul>

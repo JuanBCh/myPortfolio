@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./header.module.css";
+import Image from "next/image";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +18,7 @@ function Header() {
       className={`${styles.header} ${!showMenu ? undefined : styles.navOpen}`}
     >
       <div className={styles.logo}>
-        <img src="img/logo.png" alt="logo" />
+        <Image src="/img/logo.png" alt="logo" width={1024} height={244} />
       </div>
       <button
         className={styles.navToggle}

@@ -9,7 +9,7 @@ export default function ToDo() {
 
   if (!open) {
     return (
-      <div onClick={() => setOpen(!open)}>
+      <div className={styles.todo} onClick={() => setOpen(!open)}>
         <span>Titulo</span>
         <span>Fecha</span>
       </div>

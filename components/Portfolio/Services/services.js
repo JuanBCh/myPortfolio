@@ -25,7 +25,7 @@ export default function Services() {
             Backend: Full Stack developer with specialization in Node.js and
             Express.js. Extensive experience in efficient database management
             using PostgreSQL and versatile API development. Focus on performance
-            optimization and a commitment to staying updated with the latest
+            optimization and a commitment to stay updated with the latest
             technologies for delivering innovative solutions.
           </p>
         </div>
