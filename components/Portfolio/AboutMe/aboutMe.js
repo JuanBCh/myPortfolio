@@ -27,7 +27,7 @@ export default function AboutMe() {
         </p>
       </div>
       <Image
-        src="/img/juanBag2.JPG"
+        src="/img/juanBag2.jpg"
         alt="Image playing guitar"
         width={756}
         height={1065}
