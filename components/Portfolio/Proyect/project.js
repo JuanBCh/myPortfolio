@@ -26,18 +26,26 @@ export default function Project({ info }) {
       </section>
 
       <div className={styles.portfolioItemIndividual}>
-        <p>{info.pars[0]}</p>
+        <p className={styles.portfolioItemIndividual__par}>{info.pars[0]}</p>
         <Image
           src={info.imgs[1].ref}
           width={info.imgs[1].width}
           height={info.imgs[1].height}
         />
         {info.pars.map((p, k) => {
-          return <p key={k}>{p}</p>;
+          if (k === 0) return undefined;
+          return (
+            <p key={k} className={styles.portfolioItemIndividual__par}>
+              {p}
+            </p>
+          );
         })}
         {!info.link ? undefined : (
-          <p>
-            You can visit it <Link href={info.link}>here!</Link>
+          <p className={styles.portfolioItemIndividual__par}>
+            You can visit it{" "}
+            <Link href={info.link} target="_blank">
+              here!
+            </Link>
           </p>
         )}
       </div>

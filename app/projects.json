@@ -6,7 +6,11 @@
       { "ref": "/img/projects/nexos1.jpg", "width": 1103, "height": 870 },
       { "ref": "/img/projects/nexos2.jpg", "width": 1228, "height": 618 }
     ],
-    "pars": ["NaN", "", ""],
+    "pars": [
+      "This is the first proyect that I made. The proposal was to imitate a webpage using HTML, CSS and Javascript as those where the tecnologies that we were learning at the moment",
+      "As it was a easy proyect, although it was my first one, I decided to have fun whit it, so there are some nonsenses on the 'news' section and some other eastereggs on the page.",
+      "This one was an exelent proyect to start learning and practicing the basics of web development. Also, aferwards, I realized how frameworks like React can make the development process much easier."
+    ],
     "link": "https://first-senpai-project.vercel.app/"
   }
 ]
