@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useParams } from "next/navigation";
 import styles from "./header.module.css";
 import Image from "next/image";
 
@@ -12,6 +13,7 @@ function Header() {
     { href: "#aboutme", text: "About Me" },
     { href: "#work", text: "My Work" },
   ];
+  const params = useParams();
 
   return (
     <header
@@ -37,7 +39,10 @@ function Header() {
                   className={styles.nav__item}
                   onClick={() => setShowMenu(false)}
                 >
-                  <a href={item.href} className={styles.nav__link}>
+                  <a
+                    href={params == {} ? item.href : `/${item.href}`}
+                    className={styles.nav__link}
+                  >
                     {item.text}
                   </a>
                 </li>
