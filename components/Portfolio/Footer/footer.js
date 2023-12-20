@@ -12,18 +12,18 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <a href="mailto:jachiappara@gmail.com" className={styles.footer__link}>
+      <Link href="mailto:jachiappara@gmail.com" className={styles.footer__link}>
         jachiappara@gmail.com
-      </a>
+      </Link>
       <ul className={styles.socialList}>
         <li className={styles.socialList__item}>
-          <a
+          <Link
             href="https://www.linkedin.com/in/juanbagnasco/"
             target="_blank"
             className={styles.socialList__link}
           >
             <FontAwesomeIcon icon={faLinkedin} style={{ color: "#16e0bd" }} />
-          </a>
+          </Link>
         </li>
         <li className={styles.socialList__item}>
           <Link
@@ -42,6 +42,16 @@ export default function Footer() {
           </Link>
         </li>
       </ul>
+      <p>
+        Also, you can see my CV{" "}
+        <Link
+          href="https://drive.google.com/file/d/1dk_ZhtWd7v6fEcPyW_9-jy44oRYunhY8/view?usp=drive_link"
+          target="_blank"
+          style={{ textDecoration: "underline" }}
+        >
+          here!
+        </Link>
+      </p>
     </footer>
   );
 }
