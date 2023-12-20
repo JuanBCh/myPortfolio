@@ -11,18 +11,19 @@
 }
 
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* max-width: ; */
+  display: flex;
+  justify-content: space-around;
 }
 
 .portfolio__item {
   background: var(--clr-accent);
   overflow: hidden;
+  max-width: 24vw;
 }
 
 .portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  height: fit-content;
 }
 
 .portfolio__item:focus {

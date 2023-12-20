@@ -3,6 +3,7 @@
 import styles from "./work.module.css";
 import projects from "../../../app/projects.json";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Work() {
   return (
@@ -23,10 +24,12 @@ export default function Work() {
               key={k}
               className={styles.portfolio__item}
             >
-              <img
-                src={p.imgs[0]}
+              <Image
+                src={p.imgs[0].ref}
                 alt={`${p.title[0]} ${p.title[1] ? p.title[1] : undefined}`}
                 className={styles.portfolio__img}
+                width={p.imgs[0].width}
+                height={p.imgs[0].height}
               />
             </Link>
           );

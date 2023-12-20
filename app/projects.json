@@ -2,7 +2,10 @@
   {
     "title": ["My first project", ""],
     "subtitle": "Copy a web page",
-    "imgs": ["img/projects/nexos1.jpg", "img/projects/nexos2.jpg"],
+    "imgs": [
+      { "ref": "/img/projects/nexos1.jpg", "width": 1103, "height": 870 },
+      { "ref": "/img/projects/nexos2.jpg", "width": 1228, "height": 618 }
+    ],
     "pars": ["NaN", "", ""],
     "link": "https://first-senpai-project.vercel.app/"
   }

@@ -9,7 +9,7 @@ function Home() {
       <Intro />
       <Services />
       <AboutMe />
-      {/* <Work /> */}
+      <Work />
     </div>
   );
 }
