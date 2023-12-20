@@ -106,5 +106,11 @@ h3 {
   font-size: var(--fs-h3);
 }
 
-@media (prefers-color-shceme: dark) {
-}
+/* @media (prefers-color-shceme: dark) {
+  :root {
+    --clr-light: #000000;
+    --clr-dark: #7c7c7c;
+    --clr-ld: #2c2c2c;
+    --clr-accent: #16e0bd;
+  }
+} */
